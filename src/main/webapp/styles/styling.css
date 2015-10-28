@@ -201,7 +201,7 @@ html, body {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    background-color: #16181D;
+    background-color: #545964;
     border: medium solid black;
     z-index: 1;
 }
@@ -209,12 +209,39 @@ html, body {
 .abilityText {
     display: none;
     position: relative;
-    margin-top: 50%;
+    margin-top: -20%;
     margin-left: 50%;
     z-index: 2;
-    height: 100px;
-    width: 200px;
+    /*height: 85px;*/
+    width: 165px;
     background-color: #2F323A;
     border: thin solid white;
     border-radius: 3px 3px 3px 3px;
+    font-size: 12px;
+    padding: 5px;
 }
+
+.abilityIcon {
+    text-align: center;
+    margin-top: 4.5px;
+    z-index: 1;
+}
+
+#subclassInfo,
+#subclassTable {
+    width: 475px;
+    text-align: center;
+}
+
+.subclassTitle {
+    letter-spacing: 2px;
+}
+
+.subTitle {
+    margin-top: -25px;
+}
+
+.subclassLogo {
+    border: medium solid black;
+}
+

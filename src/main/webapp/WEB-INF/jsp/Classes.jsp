@@ -27,7 +27,7 @@
                                 <tr>
                                     <td width="35"><img src="${subclass.getImageLink()}" height="35" width="35"></td>
                                     <td class="floatLeft marginLeft">
-                                        <a href="/spring/subclass">${subclass.getSubclassName()}</a>
+                                        <a href="/spring/subclass?sc=${subclass.getSubclassId()}">${subclass.getSubclassName()}</a>
                                     </td>
                                 </tr>
                             </table>

@@ -5,54 +5,91 @@
         $("#classTab").addClass("selectedNav");
     }
 </script>
+<div id="subclassContainer">
+    <div id="subclassInfo" class="block autoMargin">
+        <h2 class="subclassTitle">${subclassObj.getSubclassName()}</h2>
+        <h4 class="subTitle">(${subclassObj.getGuardianClass().getClassName()} subclass)</h4>
 
-<table>
-    <tr>
-        <c:forEach begin="1" end="8" varStatus="loop">
-            <td>
-                <div class="abilityCircle">
-                    <div class="abilityText">
+        <img class="subclassLogo" src="${subclassObj.getImageLink()}" height="100">
 
-                    </div>
-                </div>
-            </td>
-        </c:forEach>
-    </tr>
-    <tr>
-        <c:forEach begin="1" end="8" varStatus="loop">
-            <td>
-                <div class="abilityCircle">
-                    <div class="abilityText">
+        <p>${subclassObj.getDescription()}</p>
+    </div>
 
-                    </div>
-                </div>
-            </td>
-        </c:forEach>
-    </tr>
-    <tr>
-        <c:forEach begin="1" end="8" varStatus="loop">
-            <td>
-                <div class="abilityCircle">
-                    <div class="abilityText">
 
-                    </div>
-                </div>
-            </td>
-        </c:forEach>
-    </tr>
-    <tr>
-        <td></td>
-        <c:forEach begin="1" end="3" varStatus="loop">
-            <td>
-                <div class="abilityCircle">
-                    <div class="abilityText">
 
-                    </div>
-                </div>
-            </td>
-        </c:forEach>
-    </tr>
-</table>
+    <div id="subclassTable" class="block autoMargin">
+        <p>Ability tree</p>
+        <table>
+            <tr>
+                <c:forEach items="${firstCol}" var="ability" varStatus="loop">
+                    <td>
+                        <div class="abilityCircle">
+                            <div class="abilityIcon">
+                                <img src="${iconList1.get(loop.index)}" height="40">
+                            </div>
+                            <div class="abilityText">
+                                <b>${ability.getAbilityName()}</b>
+                                <br/>
+                                ${ability.getDescription()}
+                            </div>
+                        </div>
+                    </td>
+                </c:forEach>
+            </tr>
+            <tr>
+                <c:forEach items="${secondCol}" var="ability" varStatus="loop">
+                    <td>
+                        <div class="abilityCircle">
+                            <div class="abilityIcon">
+                                <img src="${iconList1.get(loop.index)}" height="40">
+                            </div>
+                            <div class="abilityText">
+                                <b>${ability.getAbilityName()}</b>
+                                <br/>
+                                ${ability.getDescription()}
+                            </div>
+                        </div>
+                    </td>
+                </c:forEach>
+            </tr>
+            <tr>
+                <c:forEach items="${thirdCol}" var="ability" varStatus="loop">
+                    <td>
+                        <div class="abilityCircle">
+                            <div class="abilityIcon">
+                                <img src="${iconList1.get(loop.index)}" height="40">
+                            </div>
+                            <div class="abilityText">
+                                <b>${ability.getAbilityName()}</b>
+                                <br/>
+                                ${ability.getDescription()}
+                            </div>
+                        </div>
+                    </td>
+                </c:forEach>
+            </tr>
+            <tr>
+                <td></td>
+                <c:forEach items="${fourthCol}" var="ability" varStatus="loop">
+                    <td>
+                        <div class="abilityCircle">
+                            <div class="abilityIcon">
+                                <img src="${iconList2.get(loop.index)}" height="40">
+                             </div>
+                            <div class="abilityText">
+                                <b>${ability.getAbilityName()}</b>
+                                <br/>
+                                ${ability.getDescription()}
+                            </div>
+                        </div>
+                    </td>
+                </c:forEach>
+            </tr>
+        </table>
+    </div>
+</div>
 
+<br/>
+<br/>
 
 <%@include file="/WEB-INF/Includes/footer.jsp"%>

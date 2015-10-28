@@ -35,7 +35,8 @@ CREATE TABLE ABILITY (
   AbilityName varchar(20) NOT NULL,
   SubclassId number NOT NULL,
   Description varchar2(100) NOT NULL,
-  ColumnNumber number NOT NULL
+  ColumnNumber number NOT NULL,
+  RowNumber number NOT NULL
 );
 
 ALTER TABLE ABILITY ADD PRIMARY KEY (AbilityId);

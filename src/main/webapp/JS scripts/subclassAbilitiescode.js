@@ -2,11 +2,12 @@
  * Created by franzsilv1 on 10/27/2015.
  */
 $(document).ready(function() {
+
    $(".abilityCircle").hover(
        function() {
-        $(this).children().show();
+        $(this).find("div.abilityText").show();
    }, function() {
-        $(this).children().hide();
+        $(this).find("div.abilityText").hide();
    });
 
 });
