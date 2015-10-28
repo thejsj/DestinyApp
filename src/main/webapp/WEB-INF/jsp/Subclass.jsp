@@ -7,10 +7,12 @@
 </script>
 <div id="subclassContainer">
     <div id="subclassInfo" class="block autoMargin">
+        <br/>
+        <img class="subclassLogo" src="${subclassObj.getImageLink()}" height="100">
         <h2 class="subclassTitle">${subclassObj.getSubclassName()}</h2>
         <h4 class="subTitle">(${subclassObj.getGuardianClass().getClassName()} subclass)</h4>
 
-        <img class="subclassLogo" src="${subclassObj.getImageLink()}" height="100">
+
 
         <p>${subclassObj.getDescription()}</p>
     </div>
