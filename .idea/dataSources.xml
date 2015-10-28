@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2417589899">
+    <data-source source="LOCAL" name="H2 - @localhost" uuid="9d770f46-35b3-4a9c-bdc0-8f26b519b06d">
+      <driver-ref>h2.remote</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:tcp://localhost:9092/</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="MVCMusicStorePU" uuid="0a00f794-6141-485e-a4e0-2ae2c81e95da">
+      <driver-ref>oracle</driver-ref>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@localhost:1521:franzsilv1</jdbc-url>
+      <user-name>musicmvc</user-name>
+      <user-password>dfdbdfdddfcfdf9bdf98df99</user-password>
+      <libraries>
+        <library>
+          <url>file://C:\Users\franzsilv1\.m2\repository\com\ojdbc\ojdbc7\10.2.0.4.0\ojdbc7-10.2.0.4.0.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="DestinyAppPU" uuid="00c48d0c-8b30-4108-a841-5c80797b97bb">
+      <driver-ref>h2.embedded</driver-ref>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:~/DestinyDB</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://C:\Users\franzsilv1\.m2\repository\com\h2database\h2\1.0.60\h2-1.0.60.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+

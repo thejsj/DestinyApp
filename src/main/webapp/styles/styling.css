@@ -1,0 +1,220 @@
+@font-face {
+    font-family: futura;
+    src: url(Futura.ttf);
+}
+
+html {
+    overflow: scroll;
+}
+
+html, body {
+    font-family: futura;
+    background-color: #444954;
+    color: white;
+    margin: 0;
+    width: 100%;
+    min-width: 685px;
+    /*overflow: scroll;*/
+}
+
+#headerContainer {
+    width: 100%;
+    background-color: #00050D;
+}
+
+.autoMargin {
+    margin: 0 auto;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.titleSpacing {
+    letter-spacing: 2px;
+}
+
+.bodySpacing {
+    letter-spacing: 1px;
+}
+
+.centerText {
+    text-align: center;
+}
+
+#navBarContainer {
+    width: 100%;
+    height: 40px;
+    /*margin-top: -16px;*/
+    background-color: #16181D;
+    border-bottom: medium solid black;
+}
+
+#navBarContent {
+    width: 100%;
+    height: 100%;
+    display: table;
+    vertical-align: middle;
+}
+
+#navBar {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    border-top: medium solid black;
+    /*border-bottom: medium solid black;*/
+}
+
+#navBar ul {
+    /*vertical-align: middle;*/
+    margin: 0;
+}
+
+#navBar ul li {
+    display: inline-block;
+    padding-right: 25px;
+    padding-left: 25px;
+    height: 31px;
+    padding-top: 8px;
+}
+
+#navBar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#navBar ul li:hover {
+    background-color: #3C424D;
+    font-weight: bold;
+    height: 28.5px;
+    vertical-align: middle;
+    border-collapse: collapse;
+    border-left: thin solid black;
+    border-right: thin solid black;
+    border-top: thin solid black;
+    border-bottom: none;
+    padding-top: 8.5px;
+    padding-right: 24.333px;
+    padding-left: 24.333px;
+}
+
+.selectedNav {
+    background-color: #444954;
+    font-weight: bold;
+    height: 28.5px;
+    vertical-align: middle;
+    border-collapse: collapse;
+    border-left: thin solid black;
+    border-right: thin solid black;
+    border-top: thin solid black;
+    border-bottom: none;
+    padding-top: 8.5px;
+    padding-right: 24.333px;
+    padding-left: 24.333px;
+}
+
+.classDivContainer {
+    width: 100%;
+}
+
+.classDiv {
+    background-color: black;
+    border-radius: 5px 5px 5px 5px;
+    width: 350px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.classDiv td {
+    margin-right: 5px;
+}
+
+.classDivTable {
+    width: 125px;
+}
+
+.classDivTable a {
+    text-decoration: none;
+    color: white;
+}
+
+.floatLeft {
+    float: left;
+    text-align: left;
+}
+
+.marginLeft {
+    padding-left: 5px;
+}
+
+#homeLogo {
+    width: 100px;
+}
+
+/*.classDiv:hover {*/
+    /*border: thin solid white;*/
+/*}*/
+
+.subclassDiv {
+    background-color: #16181D;
+    font-size: 10px;
+    text-align: left;
+}
+
+.subclassDesc {
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin: 1px;
+    padding: 3px;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.selectedClassDiv {
+    border: thin solid white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#footerContainer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #16181D;
+}
+
+#footer {
+    display: block;
+    text-align: center;
+    font-size: 9px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.abilityCircle {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #16181D;
+    border: medium solid black;
+    z-index: 1;
+}
+
+.abilityText {
+    display: none;
+    position: relative;
+    margin-top: 50%;
+    margin-left: 50%;
+    z-index: 2;
+    height: 100px;
+    width: 200px;
+    background-color: #2F323A;
+    border: thin solid white;
+    border-radius: 3px 3px 3px 3px;
+}
