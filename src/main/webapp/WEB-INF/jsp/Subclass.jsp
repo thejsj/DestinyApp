@@ -5,13 +5,25 @@
         $("#classTab").addClass("selectedNav");
     }
 </script>
+
 <div id="subclassContainer">
     <div id="subclassInfo" class="block autoMargin">
         <br/>
-        <img class="subclassLogo" src="${subclassObj.getImageLink()}" height="100">
-        <h2 class="subclassTitle">${subclassObj.getSubclassName()}</h2>
-        <h4 class="subTitle">(${subclassObj.getGuardianClass().getClassName()} subclass)</h4>
-
+        <div id="subclassInfoTable" class="block autoMargin">
+            <table>
+                <tr>
+                    <td>
+                        <img class="subclassLogo" src="${subclassObj.getImageLink()}" height="75">
+                    </td>
+                    <td>
+                        <h2 class="subclassTitle">${subclassObj.getSubclassName()}</h2>
+                        <br/>
+                        <h4 class="subTitle">(${subclassObj.getBurn().getBurnName()} ${subclassObj.getGuardianClass().getClassName()} subclass)</h4>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+        </div>
 
 
         <p>${subclassObj.getDescription()}</p>
@@ -20,7 +32,8 @@
 
 
     <div id="subclassTable" class="block autoMargin">
-        <p>Ability tree</p>
+        <br/>
+        <p><b>Ability tree</b></p>
         <table>
             <tr>
                 <c:forEach items="${firstCol}" var="ability" varStatus="loop">

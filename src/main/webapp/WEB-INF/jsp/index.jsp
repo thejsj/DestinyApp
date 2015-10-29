@@ -4,13 +4,13 @@
         $("#homeTab").addClass("selectedNav");
     }
 </script>
-
-        <div id="homeTab">
-            <div>
+        <br/>
+        <div id="homeContainer">
+            <div id="homeContent" class="block autoMargin centerText">
                 <h3 class="centerText">Welcome to my DestinyDB Application</h3>
                 <p class="centerText">Click on a tab above to get started.</p>
                 <div id="homeLogo" class="block autoMargin">
-                    <img src="../Images/destiny_logo.jpg" height="100">
+                    <img src="../Images/destiny_logo.jpg" height="150">
                 </div>
             </div>
         </div>

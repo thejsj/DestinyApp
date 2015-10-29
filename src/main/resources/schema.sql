@@ -46,7 +46,8 @@ ALTER TABLE ABILITY ADD FOREIGN KEY (SubclassId) REFERENCES SUBCLASS(SubclassId)
 CREATE TABLE PLANETZONE (
   ZoneId number NOT NULL,
   ZoneName varchar2(50) NOT NULL,
-  PlanetId number NOT NULL
+  PlanetId number NOT NULL,
+  ImageLink varchar2(500)
 );
 
 CREATE TABLE PLANET (

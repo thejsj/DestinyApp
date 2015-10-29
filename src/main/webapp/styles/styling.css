@@ -88,8 +88,8 @@ html, body {
     text-decoration: none;
 }
 
-#navBar ul li:hover {
-    background-color: #3C424D;
+#navBar ul li:hover,
+.selectedNav {
     font-weight: bold;
     height: 28.5px;
     vertical-align: middle;
@@ -103,19 +103,12 @@ html, body {
     padding-left: 24.333px;
 }
 
+#navBar ul li:hover {
+    background-color: #3C424D;
+}
+
 .selectedNav {
     background-color: #444954;
-    font-weight: bold;
-    height: 28.5px;
-    vertical-align: middle;
-    border-collapse: collapse;
-    border-left: thin solid black;
-    border-right: thin solid black;
-    border-top: thin solid black;
-    border-bottom: none;
-    padding-top: 8.5px;
-    padding-right: 24.333px;
-    padding-left: 24.333px;
 }
 
 .classDivContainer {
@@ -153,12 +146,13 @@ html, body {
 }
 
 #homeLogo {
-    width: 100px;
+    /*width: 100px;*/
 }
 
-/*.classDiv:hover {*/
-    /*border: thin solid white;*/
-/*}*/
+#homeContent {
+    width: 375px;
+}
+
 
 .subclassDiv {
     background-color: #16181D;
@@ -201,7 +195,7 @@ html, body {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    background-color: #545964;
+    background-color: gray;
     border: medium solid black;
     z-index: 1;
 }
@@ -235,13 +229,60 @@ html, body {
 
 .subclassTitle {
     letter-spacing: 2px;
+    float: left;
 }
 
 .subTitle {
     margin-top: -25px;
+    float: left;
+}
+
+#subclassInfoTable {
+    width: 275px;
+}
+
+#subclassInfo table {
+    width: 275px;
+
 }
 
 .subclassLogo {
     border: medium solid black;
 }
 
+
+.planetPicture {
+    border: thin solid black;
+    z-index: 1;
+}
+
+.planetSelect a {
+    text-decoration: none;
+}
+
+.planetSelect a:hover img {
+    opacity: 0.4;
+    transition: opacity 0.3s 0s ease-in-out;
+}
+
+.planetSelect a:hover h3 {
+    display: inline-block;
+}
+
+.planetSelect h3 {
+    position: relative;
+    /*     top: -150px; */
+    top: 120px;
+    font-size: 30px;
+    color: white;
+    display: none;
+    z-index: 2;
+    height: 0px;
+    line-height: 0px;
+    margin-top: -30px;
+}
+
+.planetSelect {
+    background-color: black;
+    width: 351px;
+}

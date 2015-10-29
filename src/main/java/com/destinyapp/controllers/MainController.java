@@ -1,13 +1,7 @@
 package com.destinyapp.controllers;
 
-import com.destinyapp.entities.Ability;
-import com.destinyapp.entities.Burn;
-import com.destinyapp.entities.GuardianClass;
-import com.destinyapp.entities.Subclass;
-import com.destinyapp.models.AbilityModel;
-import com.destinyapp.models.BurnModel;
-import com.destinyapp.models.ClassModel;
-import com.destinyapp.models.SubclassModel;
+import com.destinyapp.entities.*;
+import com.destinyapp.models.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -36,9 +31,17 @@ public class MainController {
     @Resource(name = "abilityService")
     private AbilityModel abilityModel;
 
+    @Resource(name = "planetService")
+    private PlanetModel planetModel;
+
+
+
     private List<Burn> burnList = null;
     private List<GuardianClass> classList = null;
     private List<Subclass> subclassList = null;
+    private List<Planet> planetList = null;
+
+    private HashMap<Integer, List<Ability>> abilityMap = new HashMap<>();
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String getIndex(ModelMap model) {
@@ -68,8 +71,16 @@ public class MainController {
 
     @RequestMapping(value = "/subclass", method = RequestMethod.GET)
     public String getSubclassPage(@RequestParam(value = "sc", required = true) Integer subclassId, ModelMap model) {
+
+        List<Ability> abilityList = null;
+        if (!abilityMap.containsKey(subclassId)) {
+            abilityList = abilityModel.findBySubclassId(subclassId);
+            abilityMap.put(subclassId, abilityList);
+        } else {
+            abilityList = abilityMap.get(subclassId);
+        }
+
         Subclass currSubclass = subclassModel.findSubclassById(subclassId);
-        List<Ability> abilityList = abilityModel.findBySubclassId(subclassId);
 
         ArrayList<Ability> firstColumn = new ArrayList<>();
         ArrayList<Ability> secondColumn = new ArrayList<>();
@@ -100,6 +111,18 @@ public class MainController {
         model.put("iconList2", setupAbilityIcons(4));
 
         return "Subclass";
+    }
+
+    @RequestMapping(value = "/location", method = RequestMethod.GET)
+    public String getLocationPage(ModelMap model) {
+
+        if (planetList == null) {
+            planetList = planetModel.findAllPlanets();
+        }
+
+        model.put("planetList", planetList);
+
+        return "Locations";
     }
 
     private ArrayList<String> setupAbilityIcons(Integer rowNumber) {

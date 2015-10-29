@@ -27,6 +27,7 @@
     <script src="../../JS scripts/clientCode.js" type="text/javascript"></script>
     <script src="../../JS scripts/classDivCode.js" type="text/javascript"></script>
     <script src="../../JS scripts/subclassAbilitiescode.js" type="text/javascript"></script>
+    <script src="../../JS scripts/locationsCode.js" type="text/javascript"></script>
 
     <title>Frogzsj's Destiny App</title>
 </head>
@@ -45,7 +46,7 @@
                 <ul id="tabs">
                     <li id="homeTab"><a href="/spring/">Home</a></li>
                     <li id="classTab"><a href="/spring/class">Classes</a></li>
-                    <li id="locationTab"><a href="#locationTab">Locations</a></li>
+                    <li id="locationTab"><a href="/spring/location">Locations</a></li>
                     <li id="activityTab"><a href="#activityTab">Activities</a></li>
                     <li id="armorTab"><a href="#armorTab">Armors</a></li>
                     <li id="weaponTab"><a href="#weaponTab">Weapons</a></li>

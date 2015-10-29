@@ -7,6 +7,8 @@
         <class>com.destinyapp.entities.Burn</class>
         <class>com.destinyapp.entities.GuardianClass</class>
         <class>com.destinyapp.entities.Subclass</class>
+        <class>com.destinyapp.entities.Ability</class>
+        <class>com.destinyapp.entities.Planet</class>
         <!--<exlude-unlisted-classes>false</exlude-unlisted-classes>-->
         <properties>
             <property name="hibernate.connection.username" value="" />
