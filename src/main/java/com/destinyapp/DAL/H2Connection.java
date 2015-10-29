@@ -32,7 +32,7 @@ public class H2Connection {
 
         try {
             dbConnection = DriverManager.getConnection(DB_CONNECTION, DB_USER, DB_PASSWORD);
-            return dbConnection;
+//            return dbConnection;
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         }
@@ -40,11 +40,10 @@ public class H2Connection {
     }
 
     private static void createTables() throws SQLException {
-        Connection connection = getDBConnection();
-        Statement stmt = null;
-        try {
+        Statement stmt;
+        try (Connection connection = getDBConnection()) {
             connection.setAutoCommit(false);
-            stmt=connection.createStatement();
+            stmt = connection.createStatement();
 
             //Basic Tables
             BurnTableSetup(stmt);
@@ -73,8 +72,6 @@ public class H2Connection {
             System.out.println("SQL Exception: " + ex.getMessage());
         } catch (Exception ex) {
             ex.printStackTrace();
-        } finally {
-            connection.close();
         }
     }
 
