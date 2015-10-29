@@ -256,6 +256,96 @@ public class H2Connection {
             stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (162, 'Fire Keeper', 6, 'When standing in a Sunspot you gain an Overshield and Hammer of Sol lasts longer.', 8, 3)");
 
 
+            //Hunter
+            ///Bladedancer
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (163, 'Flux Grenade', 7, 'An explosive grenade which deals additional damage when attached to enemies.', 1, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (164, 'Skip Grenade', 7, 'A grenade which splits on impact, creating multiple projectiles which seek enemies.', 1, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (165, 'Arcbolt Grenade', 7, 'A grenade that chains bolts of lightning to nearby enemies.', 1, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (166, 'Double Jump', 7, 'Jump a second time after leaving the ground.', 2, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (167, 'Higher Jump', 7, 'Upgrades Double Jump for even greater height.', 2, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (168, 'Better Control', 7, 'Upgrades Double Jump for better directional control while in the air.', 2, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (169, 'Blink', 7, 'A short distance teleport that replaces Double Jump.', 2, 4)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (170, 'Arc Blade', 7, 'Charge your blade with Arc Light and consume your foes with lightning.', 3, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (171, 'Showstopper', 7, 'Press \"RT/R2\" during Arc Blade to damage nearby enemies in a 360-degree radius from the player.', 3, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (172, 'Razors Edge', 7, 'Press \"RT/R2\" during Arc Blade to unleash a destructive wave of energy that travels along the ground in a straight path from the front of the player.', 3, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (173, 'Vanish', 7, 'Press \"RT/R2\" during Arc Blade to disappear from sight for the duration of the Arc Blade Super or until an attack is made.', 3, 4)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (174, 'Blink Strike', 7, 'A powerful melee attack with extended range. Acts as a short distance teleport to the target.', 4, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (175, 'Backstab', 7, 'Hitting an enemy from behind with Blink Strike causes significantly more damage.', 4, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (176, 'Escape Artist', 7, 'Hitting an enemy with Blink Strike grants brief invisibility.', 4, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (177, 'Fast Twitch', 7, 'Reduces the cooldown of Blink Strike.', 4, 4)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (178, 'Path Forgotten', 7, 'Training focused on toughness and speed.', 5, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (179, 'Path Forbidden', 7, 'Training focused on battle recovery and speed.', 5, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (180, 'Path Unknown', 7, 'Training focused on battle recovery and toughness.', 5, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (181, 'Fleet Footed', 7, 'Increases maximum sprint speed and extends slide distance.', 6, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (182, 'Quick Draw', 7, 'Weapons are ready immediately.', 6, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (183, 'Shadowjack', 7, 'Increases the duration of invisibility effects.', 6, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (184, 'Way of the Drifter', 7, 'Training focused on all attributes.', 7, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (185, 'Way of the Fearless', 7, 'Training focused on toughness at all costs.', 7, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (186, 'Way of the Nomad', 7, 'Training focused on maximum battle recovery.', 7, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (187, 'Encore', 7, 'Killing an enemy with Arc Blade extends its duration.', 8, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (188, 'Stalker', 7, 'Gain invisibility after crouching in place for a short time.', 8, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (189, 'Hungering Blade', 7, 'Kills with Arc Blade and Blink Strike immediately regenerate health.', 8, 3)");
+
+            ///Nightstalker
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (190, 'Spike Grenade', 8, 'A grenade that attaches to any surface and emits a torrent of damaging void light.', 1, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (191, 'Voidwall Grenade', 8, 'A Grenade that creates a horizontal wall of burning void light.', 1, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (192, 'Vortex Grenade', 8, 'A grenade that creates a vortex which continually damages enemies inside the sphere.', 1, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (193, 'Double Jump', 8, 'Jump a second time after leaving the ground.', 2, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (194, 'Increased Height', 8, 'Upgrades Double Jump for even greater height.', 2, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (195, 'Increased Control', 8, 'Upgrades Double Jump for better directional control while in the air.', 2, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (196, 'Triple Jump', 8, 'Upgrades Double Jump with a third jump.', 2, 4)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (197, 'Shadowshot', 8, 'Tether a large group of foes to a Void Anchor, slowing and silencing them for your fireteam.', 3, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (198, 'Blood Bound', 8, 'Tethered enemies explode when killed. Damage to tethered enemies is shared to all.', 3, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (199, 'Black Hole', 8, 'The Void Anchor has increased range, lasts significantly longer, and can tether more targets.', 3, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (200, 'Quiver', 8, 'Fire Shadowshot up to three times. Void Anchors have reduced range.', 3, 4)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (201, 'Smoke', 8, 'Throw smoke to slow and disorient those within its cloud.', 4, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (202, 'Envenomed', 8, 'Adds a toxin that damages enemies within the smoke.', 4, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (203, 'Vanish in Smoke', 8, 'You and allies near Smoke explosions vanish from sight.', 4, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (204, 'Snare', 8, 'Allows smoke to stick to surfaces, detonating when enemies are near.', 4, 4)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (205, 'Path Forgotten', 8, 'Training focused on toughness and speed.', 5, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (206, 'Path Forbidden', 8, 'Training focused on battle recovery and speed.', 5, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (207, 'Path Unknown', 8, 'Training focused on battle recovery and toughness.', 5, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (208, 'Courage of the Pack', 8, 'Killing tethered targets increases Recovery and Armor for you and nearby allies. Stacks up to 5 times.', 6, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (209, 'Light of the Pack', 8, 'Killing tethered targets creates Orbs of Light for your allies.', 6, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (210, 'Lockdown', 8, 'Grenade and Smoke effects last twice as long, allowing strong territory control.', 6, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (211, 'Way of the Drifter', 8, 'Training focused on all attributes.', 7, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (212, 'Way of the Fearless', 8, 'Training focused on toughness at all costs.', 7, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (213, 'Way of the Nomad', 8, 'Training focused on maximum battle recovery.', 7, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (214, 'Keen Scout', 8, 'Sprint and Sneak faster, gain Enhanced Tracker, and ability to Mark targets you damage.', 8, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (215, 'Predator', 8, 'The Void Anchors fired from Shadowshot become traps that stick to surfaces and wait for prey.', 8, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (216, 'Shadestep', 8, 'Press Crouch, Crouch to evade.', 8, 3)");
+
+
+            //Gunslindger
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (217, 'Incendiary Grenade', 9, 'An explosive grenade that sets enemies on fire, causing additional damage to them.', 1, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (218, 'Swarm Grenade', 9, 'A grenade which detonates on impact, releasing multiple drones that seek nearby enemies.', 1, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (219, 'Tripmine Grenade', 9, 'An explosive grenade that sticks to surfaces and detonates when enemies pass through its laser trigger.', 1, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (220, 'Double Jump', 9, 'Jump a second time after leaving the ground.', 2, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (221, 'Better Control', 9, 'Upgrades Double Jump for better directional control while in the air.', 2, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (222, 'Triple Jump', 9, 'Upgrades Double Jump with a third jump.', 2, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (223, 'Higher Jump', 9, 'Upgrades Double Jump for even greater height.', 2, 4)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (224, 'Golden Gun', 9, 'Summon a flaming pistol which disintegrates enemies with Solar Light.', 3, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (225, 'Deadeye', 9, 'Significantly increases the accuracy of Golden Gun.', 3, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (226, 'Combustion', 9, 'Killing enemies with Golden Gun causes them to explode after about one second.', 3, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (227, 'Gunfighter', 9, 'Reduces the cooldown of Golden Gun, allowing it to be used more often.', 3, 4)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (228, 'Throwing Knife', 9, 'Throw a knife from a distance.', 4, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (229, 'Circle of Life', 9, 'Killing an enemy with Throwing Knife while Golden Gun is active extends the duration of Golden Gun.', 4, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (230, 'Incendiary Blade', 9, 'Throwing Knife sets enemies on fire, dealing additional damage over time.', 4, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (231, 'Knife Juggler', 9, 'Precision kills with Throwing Knife immediately resets its cooldown.', 4, 4)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (232, 'Path Forgotten', 9, 'Training focused on toughness and speed.', 5, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (233, 'Path Forbidden', 9, 'Training focused on battle recovery and speed.', 5, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (234, 'Path Unknown', 9, 'Training focused on battle recovery and toughness.', 5, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (235, 'Scavenger', 9, 'Picking up ammo reduces the cooldown of your grenade and Throwing Knife.', 6, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (236, 'Keyhole', 9, 'Golden Gun overpenetrates and can damage multiple targets.', 6, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (237, 'Gunslingers Trance', 9, 'Precision kills increase weapon stability. Stacks up to 3 times.', 6, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (238, 'Way of the Drifter', 9, 'Training focused on all attributes.', 7, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (239, 'Way of the Fearless', 9, 'Training focused on toughness at all costs.', 7, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (240, 'Way of the Nomad', 9, 'Training focused on maximum battle recovery.', 7, 3)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (241, 'Chain of Woe', 9, 'Precision kills increase weapon reload speed. Stacks up to 3 times.', 8, 1)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (242, 'Over the Horizon', 9, 'Increases the range of Golden Gun.', 8, 2)");
+            stmt.execute("INSERT INTO ABILITY(AbilityId, AbilityName, SubclassId, Description, ColumnNumber, RowNumber) VALUES (243, 'Gamblers Dagger', 9, 'Gain an additional Throwing Knife.', 8, 3)");
+
+
 
             ResultSet rs = stmt.executeQuery("SELECT * FROM SUBCLASS");
             System.out.println("Class table:");
