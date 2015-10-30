@@ -6,7 +6,7 @@
 </script>
         <br/>
         <div id="homeContainer">
-            <div id="homeContent" class="block autoMargin centerText">
+            <div id="homeContent" class="block autoMargin centerText bodyWidth">
                 <h3 class="centerText">Welcome to my DestinyDB Application</h3>
                 <p class="centerText">Click on a tab above to get started.</p>
                 <div id="homeLogo" class="block autoMargin">

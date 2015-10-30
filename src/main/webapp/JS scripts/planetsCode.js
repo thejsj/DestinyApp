@@ -1,32 +1,28 @@
 /**
- * Created by franzsilv1 on 10/27/2015.
+ * Created by franzsilv1 on 10/30/2015.
  */
-$(document).ready(function () {
-
-    $(".classDiv").click(function (e) {
+$(document).ready(function() {
+    $(".mapDiv").click(function () {
         var selected = false;
-        if ($(e.target).is('a')) {
-            return;
-        }
 
         if (!$(this).find("div").hasClass("noDisplay")) {
             selected = true;
         }
 
         if (!selected) {
-            $(this).addClass("selectedClassDiv");
+            $(this).addClass("selectedMapDiv");
             $(this).find("div").removeClass("noDisplay");
         } else {
-            $(this).removeClass("selectedClassDiv");
+            $(this).removeClass("selectedMapDiv");
             $(this).find("div").addClass("noDisplay");
         }
     });
 
-    $(".classDiv").hover(function() {
+    $(".mapDiv").hover(function() {
         $(this).css("border", "thin solid white");
     }, function() {
-        if (!$(this).hasClass("selectedClassDiv")) {
+        if (!$(this).hasClass("selectedMapDiv")) {
             $(this).css("border", "none");
         }
     });
-});
+})

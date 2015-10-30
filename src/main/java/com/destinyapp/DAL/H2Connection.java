@@ -80,10 +80,10 @@ public class H2Connection {
         stmt.execute("CREATE TABLE PLANET (PlanetId number NOT NULL, PlanetName varchar2(50) NOT NULL, ImageLink varchar2(500) NOT NULL, MapLink varchar2(500))");
         stmt.execute("INSERT INTO PLANET (PlanetId, PlanetName, ImageLink, MapLink) VALUES (1, 'Tower', '../../Images/tower_pic.jpg', '../../Images/tower_map.jpg')");
         stmt.execute("INSERT INTO PLANET (PlanetId, PlanetName, ImageLink, MapLink) VALUES (2, 'Earth', '../../Images/earth_pic.jpg', '../../Images/earth_map.png')");
-        stmt.execute("INSERT INTO PLANET (PlanetId, PlanetName, ImageLink, MapLink) VALUES (3, 'Moon', '../../Images/moon_pic.jpg', '../../Images/moon_map.png')");
+        stmt.execute("INSERT INTO PLANET (PlanetId, PlanetName, ImageLink, MapLink) VALUES (3, 'Moon', '../../Images/moon_pic.jpg', '../../Images/moon_map.jpg')");
         stmt.execute("INSERT INTO PLANET (PlanetId, PlanetName, ImageLink, MapLink) VALUES (4, 'Venus', '../../Images/venus_pic.jpg', '../../Images/venus_map.jpg')");
         stmt.execute("INSERT INTO PLANET (PlanetId, PlanetName, ImageLink, MapLink) VALUES (5, 'Mars', '../../Images/mars_pic.jpg', '../../Images/mars_map.jpg')");
-        stmt.execute("INSERT INTO PLANET (PlanetId, PlanetName, ImageLink, MapLink) VALUES (6, 'Saturn (The Dreadnaught)', '../../Images/saturn_pic.png', '../../Images/saturn_map.jpg')");
+        stmt.execute("INSERT INTO PLANET (PlanetId, PlanetName, ImageLink, MapLink) VALUES (6, 'The Dreadnaught', '../../Images/saturn_pic.png', '../../Images/saturn_map.jpg')");
         stmt.execute("INSERT INTO PLANET (PlanetId, PlanetName, ImageLink) VALUES (7, 'Mercury', '../../Images/mercury_pic.jpg')");
     }
 

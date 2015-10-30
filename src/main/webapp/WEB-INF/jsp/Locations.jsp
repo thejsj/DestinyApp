@@ -12,15 +12,15 @@
         <c:forEach items="${planetList}" var="planet">
             <div class="planetSelect block autoMargin centerText">
 
-                <a href="#">
-                    <c:choose>
-                        <c:when test="${planet.getPlanetName() != 'Saturn (The Dreadnaught)'}">
+                <a href="/spring/specLocation?pl=${planet.getPlanetId()}">
+                    <%--<c:choose>--%>
+                        <%--<c:when test="${planet.getPlanetName() != 'Saturn (The Dreadnaught)'}">--%>
                             <h3 class="titleSpacing">${planet.getPlanetName()}</h3>
-                        </c:when>
-                        <c:otherwise>
-                            <h3 class="titleSpacing">The Dreadnaught</h3>
-                        </c:otherwise>
-                    </c:choose>
+                        <%--</c:when>--%>
+                        <%--<c:otherwise>--%>
+                            <%--<h3 class="titleSpacing">The Dreadnaught</h3>--%>
+                        <%--</c:otherwise>--%>
+                    <%--</c:choose>--%>
                     <img class="planetPicture" src="${planet.getImageLink()}" width="350">
                 </a>
 

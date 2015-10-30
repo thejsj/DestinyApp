@@ -24,10 +24,11 @@
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 
-    <script src="../../JS scripts/clientCode.js" type="text/javascript"></script>
+    <%--<script src="../../JS scripts/clientCode.js" type="text/javascript"></script>--%>
     <script src="../../JS scripts/classDivCode.js" type="text/javascript"></script>
     <script src="../../JS scripts/subclassAbilitiescode.js" type="text/javascript"></script>
-    <script src="../../JS scripts/locationsCode.js" type="text/javascript"></script>
+    <script src="../../JS scripts/planetsCode.js" type="text/javascript"></script>
+    <%--<script src="../../JS scripts/locationsCode.js" type="text/javascript"></script>--%>
 
     <title>Frogzsj's Destiny App</title>
 </head>

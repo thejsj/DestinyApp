@@ -2,6 +2,7 @@ package com.destinyapp.controllers;
 
 import com.destinyapp.entities.*;
 import com.destinyapp.models.*;
+import org.omg.CORBA.Request;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -123,6 +124,23 @@ public class MainController {
         model.put("planetList", planetList);
 
         return "Locations";
+    }
+
+    @RequestMapping(value = "/specLocation", method = RequestMethod.GET)
+    public String getSpecLocationPage(@RequestParam(value = "pl", required = true) Integer planetId, ModelMap model) {
+
+        Planet currPlanet = planetModel.findPlanetById(planetId);
+
+        model.put("currPlanet", currPlanet);
+
+        return "LocationSpecific";
+    }
+
+    @RequestMapping(value = "/map", method = RequestMethod.GET)
+    public String getMap(@RequestParam(value = "plnt", required = true) Integer planetId, ModelMap model) {
+        Planet currPlanet = planetModel.findPlanetById(planetId);
+        model.put("currPlanet", currPlanet);
+        return "Map";
     }
 
     private ArrayList<String> setupAbilityIcons(Integer rowNumber) {
