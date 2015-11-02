@@ -60,6 +60,7 @@ html, body {
     height: 100%;
     display: table;
     vertical-align: middle;
+    /*overflow: hidden;*/
 }
 
 #navBar {

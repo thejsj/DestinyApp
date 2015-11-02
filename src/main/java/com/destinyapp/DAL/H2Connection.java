@@ -87,6 +87,23 @@ public class H2Connection {
         stmt.execute("INSERT INTO PLANET (PlanetId, PlanetName, ImageLink) VALUES (7, 'Mercury', '../../Images/mercury_pic.jpg')");
     }
 
+    private static void PlanetZonesTableSetup(Statement stmt) throws SQLException {
+        stmt.execute("CREATE TABLE PLANETZONE (ZoneId number NOT NULL, ZoneName varchar2(50) NOT NULL, PlanetId number NOT NULL, ImageLink varchar2(500))");
+        stmt.execute("INSERT INTO PLANETZONE (ZoneId, ZoneName, PlanetId) VALUES (1, 'Steppes', 2)");
+        stmt.execute("INSERT INTO PLANETZONE (ZoneId, ZoneName, PlanetId) VALUES (2, 'Mothyards', 2)");
+        stmt.execute("INSERT INTO PLANETZONE (ZoneId, ZoneName, PlanetId) VALUES (3, 'Skywatch', 2)");
+        stmt.execute("INSERT INTO PLANETZONE (ZoneId, ZoneName, PlanetId) VALUES (4, 'Forgotten Shore', 2)");
+        stmt.execute("INSERT INTO PLANETZONE (ZoneId, ZoneName, PlanetId) VALUES (5, 'Rocketyard', 2)");
+        stmt.execute("INSERT INTO PLANETZONE (ZoneId, ZoneName, PlanetId) VALUES (6, 'The Divide', 2)");
+        stmt.execute("INSERT INTO PLANETZONE (ZoneId, ZoneName, PlanetId) VALUES (11, 'Kings Watch', 2)");
+        //moon
+        stmt.execute("INSERT INTO PLANETZONE (ZoneId, ZoneName, PlanetId) VALUES (7, 'Anchor of Light', 3)");
+        stmt.execute("INSERT INTO PLANETZONE (ZoneId, ZoneName, PlanetId) VALUES (8, 'Hellmouth', 3)");
+        stmt.execute("INSERT INTO PLANETZONE (ZoneId, ZoneName, PlanetId) VALUES (9, 'Archers Line', 3)");
+        stmt.execute("INSERT INTO PLANETZONE (ZoneId, ZoneName, PlanetId) VALUES (10, 'Temple of Crota', 3)");
+        //venus
+    }
+
     private static void HunterAbilitySetup(Statement stmt) throws SQLException {
         //Hunter
         ///Bladedancer
